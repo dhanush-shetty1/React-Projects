@@ -2,6 +2,7 @@ import {useForm} from "react-hook-form"
 import * as yup from 'yup'
 export const Form =()=>{
     const {register,handleSubmit}=useForm();
+    const schema=yup.object()
     const onSubmit=(data)=>{
         console.log(data);
     }
